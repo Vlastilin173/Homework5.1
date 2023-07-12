@@ -21,3 +21,12 @@
 # *Пример:*
 # 2 2
 #     4 
+
+a = int(input('Введите число A = '))
+b = int(input('Введите число B = '))
+def summ(a, b):
+    if b == 0:
+        return a
+    return summ(a + 1, b - 1)
+print(f'{a} {b} -> {summ(a, b)}')
+
